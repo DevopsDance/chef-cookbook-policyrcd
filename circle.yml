@@ -4,6 +4,8 @@ machine:
   timezone: UTC
 
 dependencies:
+  bundler:
+    without: workstation
   pre:
     - gem install bundler
 
