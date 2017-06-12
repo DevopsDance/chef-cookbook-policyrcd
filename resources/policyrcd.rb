@@ -5,6 +5,7 @@ property :exit_code, Integer, required: true
 action :create do
   template ::File.join(node['devopsdance-policyrcd']['dir'], name) do
     source 'policyrcd.service.erb'
+    cookbook 'devopsdance-policyrcd'
     owner 'root'
     group 'root'
     mode '0644'
