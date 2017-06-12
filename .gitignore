@@ -1,0 +1,6 @@
+# Ignore kitchen files.
+.kitchen/
+
+# Ignore lockfiles.
+Gemfile.lock
+Berksfile.lock

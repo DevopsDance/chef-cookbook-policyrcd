@@ -1,0 +1,12 @@
+---
+
+machine:
+  timezone: UTC
+
+dependencies:
+  pre:
+    - gem install bundler
+
+test:
+  override:
+    - bundle exec rake

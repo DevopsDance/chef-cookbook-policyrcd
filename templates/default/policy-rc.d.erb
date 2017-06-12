@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# This file is managed by Chef.
+
+POLICYRCD_DIR="<%= @config['dir'] %>"
+POLICYRCD_SERVICE_NAME="$1"
+
+logger -t $(basename $0) "$@"
+
+if [ -f $POLICYRCD_DIR/$POLICYRCD_SERVICE_NAME ]; then
+  logger -t $(basename $0) "Loading $POLICYRCD_DIR/$POLICYRCD_SERVICE_NAME"
+  source $POLICYRCD_DIR/$POLICYRCD_SERVICE_NAME
+fi
+
+# vim :ft=sh:
