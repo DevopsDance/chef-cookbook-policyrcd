@@ -14,6 +14,11 @@ Chef `~> 12` or `~> 13` is required. Otherwise provision will fail.
 Sets and installs scripts and directory. It's mandatory to include this recipe
 before using `policyrcd` resource.
 
+## Attributes
+
+- `default['devopsdance-policyrcd']['dir']` Configuration directory path. It's
+  a place where all service policies are kept.
+
 ## Resources
 ### dnsmasq_conf
 
