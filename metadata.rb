@@ -3,7 +3,7 @@ maintainer 'DevopsDance'
 maintainer_email 'team@devops.dance'
 license 'Apache-2.0'
 description 'Installs and configures DNSMasq'
-version '0.1.0'
+version '0.1.1'
 source_url 'https://github.com/DevopsDance/chef-cookbook-policyrcd'
 issues_url 'https://github.com/DevopsDance/chef-cookbook-policyrcd/issues'
 
